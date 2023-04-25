@@ -1,0 +1,226 @@
+/*Scelta del font e rimozione dei margini dal body e dal footer*/
+body, footer{
+    margin: 0;
+    font-family: 'Carlito';
+}
+
+/*sizer del font*/
+@media screen and (max-height : 9999px){
+    body, footer{ 
+        font-size: 42px;
+    }
+}
+@media screen and (max-height: 2000px){
+    body, footer{ 
+        font-size: 32px;
+    }
+}
+@media screen and (max-height: 1500px){
+    body, footer{ 
+        font-size:  16px;
+    }
+}
+@media screen and (max-height: 500px){
+    body, footer{ 
+        font-size: 8px;
+    }
+}
+
+
+
+/*parte più alta del sito denominata header*/
+
+#header{
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc( 0.5em + 0.5vw);
+    color: white;
+}
+
+.flexHeaderContainer{
+    display: flex;
+    align-items: center;
+}
+
+#siteIcon{
+    width: 2vw;
+    margin-left: 5vw;
+}
+
+.headerButton{
+    height: calc(2vh + 1em);
+    font-size: calc(0.519em + 0.4vw);
+    border-radius: 0.4em;
+    border: 0;
+    color: white;
+}
+#requestButton{
+    width: calc(4vw + 6em);
+    margin-right: 1em;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid gray;
+}
+#signButton{
+    background-color: #4C5FD5;
+    margin-right: 4em;
+    width: calc(3vw + 3em);
+}
+
+
+
+/*Parte alta del body composta da un H1 e della search bar*/
+
+#upperBody{
+    background-color: #dadbf1;
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: calc(1.5em + 2vw);    
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-weight: 550;
+}
+form{
+    width: calc(35vw + 5em);
+    height: calc(2vh + 1em);
+    border: 1px solid black;
+    box-shadow: 0px 1px 5px gray;
+    display: flex;
+    background-color: white;
+}
+form input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    flex: 1;
+    font-size: 0.6em;
+}
+form button{
+    background: transparent;
+    border:0;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+
+
+
+
+/*parte bassa del body*/
+#downBody{
+    font-size: calc(0.7em + 0.3vw);
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    min-width: 25vw;
+}
+.individualContainer{
+    display: flex;
+}
+.individualContainer p{
+    margin : 0;
+    margin-bottom: 1vh;
+    margin-right: 6vw;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+}
+p text{
+    margin-bottom: 1vh;
+}
+.individualContainer img{
+    height: 4em;
+    width: 4vw;
+    margin-right: 2vw;
+    margin-left: 7vw;
+}
+a{
+    text-decoration: none;
+    color: #4C5FD5;
+}
+
+
+
+/*footer*/
+
+footer {
+    position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    max-height: 400px;
+    font-size: calc(0.15vw + 0.6em);
+    display: flex;
+    justify-content:flex-start;
+}
+li{
+    list-style-type: none;
+}
+footer text{
+    margin-right: 5vw;
+    margin-left: 10vw;
+}
+ul{
+    margin-top: 0.5vh;
+}
+.companyFooterSubTitle{
+    margin-right: 0vw;
+} 
+footer div{
+    align-self: flex-end;
+    margin-left: 4vw;
+}
+.footerIcon{
+    height: 2em;
+    margin-bottom: 0.5vh;
+}
+.footerSubTitle{
+    font-size: calc(0.2vw + 1em);
+    margin-bottom: 0.4vh;
+}
+#contactSubTitle{
+    margin-top: 0.8vh;
+    margin-bottom: 0.4vh;
+}
+footer a{
+    color:white;
+}
+
+
+/*sizer dello spazio fra le colonne del footer*/
+@media screen and (max-height : 9999px){
+    footer text{
+        margin-left: 5vw;
+    }
+}
+@media screen and (max-height: 2000px){
+    footer text{
+        margin-left: 8vw;
+    }
+}
+@media screen and (max-height: 1500px){
+    footer text{
+        margin-left: 10vw;
+    }
+}
+@media screen and (max-height: 500px){
+    footer text{
+        margin-left: 12vw;
+    }
+}
